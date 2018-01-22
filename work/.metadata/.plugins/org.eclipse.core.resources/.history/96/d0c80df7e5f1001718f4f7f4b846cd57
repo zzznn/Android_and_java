@@ -1,0 +1,64 @@
+package com.example.fragmentlife;
+
+import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+
+
+public class MainActivity extends Activity {
+
+	//7个 生命周期方法
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Log.d("TAG", "fragment____-onCreate");
+        FragmentManager manager = getFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.add(R.id.FL, new MyFragment());
+        
+    }
+    
+    @Override
+    protected void onStart() {
+    	// TODO Auto-generated method stub
+    	super.onStart();
+    }
+    
+    @Override
+    protected void onStop() {
+    	// TODO Auto-generated method stub
+    	super.onStop();
+    }
+    
+    @Override
+    protected void onRestart() {
+    	// TODO Auto-generated method stub
+    	super.onRestart();
+    }
+    @Override
+    protected void onResume() {
+    	// TODO Auto-generated method stub
+    	super.onResume();
+    }
+    
+    @Override
+    protected void onPause() {
+    	// TODO Auto-generated method stub
+    	super.onPause();
+    }
+    
+    @Override
+    protected void onDestroy() {
+    	// TODO Auto-generated method stub
+    	super.onDestroy();
+    }
+    
+
+
+}

@@ -1,0 +1,104 @@
+package com.Kevin.day0202;
+
+import android.support.v7.app.ActionBarActivity;
+import android.text.method.KeyListener;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EdgeEffect;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+
+public class MainActivity extends ActionBarActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        initView();
+    }
+
+
+    private void initView() {
+		// TODO Auto-generated method stub
+        TextView mTView1 = (TextView) findViewById(R.id.tv);
+        mTView1.setText("kevin1!");
+        TextView mtvView3 = (TextView) findViewById(R.id.tv_sec);
+        mtvView3.setText("kevin2");
+        TextView mTvView = (TextView) findViewById(R.id.tv_th);
+        mTvView.setText("hahahah");
+        
+        EditText etView1 = (EditText) findViewById(R.id.et_name);
+        etView1.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				String string = etView1.getText().toString();
+				Toast.makeText(context, text, duration)
+				
+			}
+		})
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        Button mBtn = (Button) findViewById(R.id.btn);
+        mBtn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Toast.makeText(MainActivity.this, "提示信息", Toast.LENGTH_SHORT).show();
+				
+			}
+		});
+        
+        Button mBtnsec = (Button) findViewById(R.id.btn_sec);  
+        mBtnsec.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+				builder.setIcon(R.drawable.ic_launcher);
+				builder.setTitle("对话框");
+				builder.setMessage("你要退出吗？");
+				builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+					
+					@Override
+					public void onClick(DialogInterface arg0, int arg1) {
+						// TODO Auto-generated method stub
+						
+					}
+					
+				});
+			builder.setPositiveButton("ok", new DialogInterface.OnClickListener() {
+				
+				@Override
+				public void onClick(DialogInterface arg0, int arg1) {
+					// TODO Auto-generated method stub
+					Toast.makeText(MainActivity.this, "ok", Toast.LENGTH_LONG).show();
+				}
+			});
+				
+			}
+		});
+        
+	}
+    
+
+}

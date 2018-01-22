@@ -1,0 +1,70 @@
+package com.kevin.day0203;
+
+import com.kevin.day0203.MainActivity;
+import com.kevin.day0203.R;
+
+import android.support.v7.app.ActionBarActivity;
+import android.R.string;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+
+public class MainActivity extends ActionBarActivity {
+
+
+	private Button mBtn;
+	private Button mBtn1;
+	private EditText mEtName;
+	private EditText mEtCode;
+
+	@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        initView();
+    }
+
+	private void initView() {
+		// TODO Auto-generated method stub
+        mEtName = (EditText) findViewById(R.id.et_name);
+        mEtCode = (EditText) findViewById(R.id.et_code);
+        
+        mBtn = (Button) findViewById(R.id.btn);
+        mBtn1 = (Button) findViewById(R.id.btn1);
+        
+        mBtn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				finish(); //关闭程序
+				
+			}
+		});
+        
+        mBtn1.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+			    string name = m	
+			}
+		});
+        
+
+		
+		
+		
+		
+		
+
+	}
+	//这里是最后
+}

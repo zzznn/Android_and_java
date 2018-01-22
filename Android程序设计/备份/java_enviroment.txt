@@ -1,0 +1,11 @@
+
+JAVA_HOME
+C:\Program Files\Java\jdk1.8.0_45
+
+path
+C:\Documents and Settings\All Users\Application Data\Oracle\Java\javapath;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;C:\Program Files\Common Files\Thunder Network\KanKan\Codecs;%QUARTUS_ROOTDIR%\bin;C:\PROGRA~1\ATT\Graphviz\bin;C:\PROGRA~1\ATT\Graphviz\bin\tools;%JAVA_HOME%\bin
+
+
+CLASSPATH
+
+.;%JAVA_HOME%\lib\dt.jar:%JAVA_HOME%\lib\tools.jar;

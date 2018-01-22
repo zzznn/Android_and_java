@@ -1,0 +1,66 @@
+﻿package com.kevin.day0203;
+
+import com.kevin.day0203.MainActivity;
+import com.kevin.day0203.R;
+
+import android.support.v7.app.ActionBarActivity;
+import android.R.string;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+
+public class MainActivity extends ActionBarActivity {
+
+
+	private Button mBtnCansel;
+	private Button mBtnRegist;
+	private EditText mEtName;
+	private EditText mEtCode;
+
+	@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        initView();
+    }
+
+	private void initView() {
+		// TODO Auto-generated method stub
+        mEtName = (EditText) findViewById(R.id.et_name);
+        mEtCode = (EditText) findViewById(R.id.et_code);
+        
+        mBtnCansel = (Button) findViewById(R.id.btn_cansel);
+        mBtnRegist = (Button) findViewById(R.id.btn_regist);
+        
+        mBtnCansel.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				finish(); //关闭程序
+				
+			}
+		});
+        
+        mBtnRegist.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+			    String name = mEtName.getText().toString();
+			    String code = mEtCode.getText().toString();
+			    Toast.makeText(MainActivity.this, "名称是："+name+",密码是："+code, Toast.LENGTH_LONG).show();
+			}
+		});
+
+
+	}
+	//这里是最后
+}

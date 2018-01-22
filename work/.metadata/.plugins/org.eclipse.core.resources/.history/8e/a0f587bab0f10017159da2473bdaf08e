@@ -1,0 +1,23 @@
+package com.Kevin.day0401;
+
+import java.util.zip.Inflater;
+
+import android.app.Fragment;
+import android.os.Bundle;
+
+import android.view.View;
+
+public class MyPragment extends Fragment {
+	
+	
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		View view = Inflater.Inflate(R.layout.my_fragment,null);
+		
+		return view;
+		
+		
+	}
+
+}

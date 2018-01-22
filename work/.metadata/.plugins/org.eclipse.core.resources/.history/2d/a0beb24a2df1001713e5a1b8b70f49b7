@@ -1,0 +1,20 @@
+package com.example.sp;
+
+import android.app.Activity;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+
+public class SecActivity extends Activity {
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_sec);
+		SharedPreferences sp = getSharedPreferences("sp", MODE_PRIVATE);
+		sp.getString("key", defValue);
+		
+		
+	}
+	
+
+}

@@ -1,0 +1,59 @@
+package com.kevin.day0203;
+
+import com.kevin.day0203.MainActivity;
+import com.kevin.day0203.R;
+
+import android.support.v7.app.ActionBarActivity;
+import android.R.string;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+
+public class MainActivity extends ActionBarActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        initView();
+    }
+
+	private void initView() {
+		// TODO Auto-generated method stub
+        TextView mTView1 = (TextView) findViewById(R.id.tv);
+        mTView1.setText("账号");
+        TextView mTvView2 = (TextView) findViewById(R.id.tv_sec);
+        mTvView2.setText("密码");
+        
+        EditText etname = (EditText) findViewById(R.id.et_name);
+        
+        EditText etname1 = (EditText) findViewById(R.id.et_name1);
+        
+        string str1 = etname;
+
+        Button mBtn = (Button) findViewById(R.id.btn);
+        mBtn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Toast.makeText(MainActivity.this, ("/etname"+"etname"), Toast.LENGTH_SHORT).show();
+				
+			}
+		});
+		
+		
+		
+		
+		
+
+	}
+	//这里是最后
+}

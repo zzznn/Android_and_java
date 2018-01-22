@@ -1,0 +1,61 @@
+package com.Kevin.day0301;
+
+import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+
+
+public class MainActivity extends ActionBarActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        initView();
+    }
+
+	private void initView() {      //listview适配器控件
+		// TODO Auto-generated method stub
+		//1.数据源   假数据 （没有数据库）
+		
+		
+		
+		//2.适配器  自己写    initview外面写   经常使用：自定义适配器  继承base
+				
+		
+	}
+
+	//适配器  自己写 
+	class MyAdapter extends BaseAdapter
+
+		@Override
+		public int getCount() {   //获取数量
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public Object getItem(int arg0) {      //返回游标
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public long getItemId(int arg0) {    //下标
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public View getView(int arg0, View arg1, ViewGroup arg2) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+	
+
+    
+}
